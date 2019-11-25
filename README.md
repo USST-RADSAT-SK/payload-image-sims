@@ -1,1 +1,2 @@
-# payload-image-sims
+# Payload Image Sims
+The USST Payloads repository for the the payload team. These files will primiarily involve the simulation of camera images that will be recevied, looking at blur effects and their resolution.
