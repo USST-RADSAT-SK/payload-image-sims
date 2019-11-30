@@ -1,1 +1,19 @@
-Super Resolution Algorithm Research
+SUPER-RESOLUTION(SR)
+
+-This will require multiple successive images with very little time between images
+-Given our camera, we could do up to four images of quick succession
+-This would be a technique that we could try only after we have met our mission requirments of returning two good quatlity images of Earth
+-SR works by collecting information about the imaged object from multiple images. This means that with n-images we will have an increased the total information we have gathered on the Earth. It relies on slightly different perspectives
+
+Steps
+1.) Acquire four images from CubeSense
+2.) Use the Lanczos resampling method to increase the size of the images(https://en.wikipedia.org/wiki/Lanczos_resampling)
+This is basically a filtering function that results in an increased image size
+3.)Use sub-pixel accurate motion compensation. This basiclly merges adjacent pixels in successive images. For examples, pixel (1,245) in image one is going to be very similar to image (1,246) in image 2 due to the motion of the earth and camera. This technique will essentially average and combine the pixels that correspond to the same location on the earth. The math is a little advanced here and more research into this specific step would be required if we pursue this option. 
+4.) Use spatial interpolation between the images to find values inbetween those that were recorded
+5.) Compensate for the motion. I believe we would need to know the approximate rotational value of the the CubeSat to do this. I Think we would be shifting all of the pixels
+
+Conclusions
+I think that this could be a good option for our team. Although some of the math may be a little intense, we could likely use many built in functions in matlab or python to assist with this. We should consider this option. Click on the link at the bottom of the page to see an example of how four images can be used to improve resolution. 
+
+http://www.infognition.com/articles/what_is_super_resolution.html
