@@ -1,0 +1,22 @@
+1. SVD + Wavelet transform
+
+In PHYS 893 we used singular value decomposition to change the resolution of an image (in class we decreases resolution by using fewer principal components in order to make the file size smaller).
+It looks like a combination of SVD and Wavelet transforms can be used to increase the constrast of an image (so not exactly the resolution...)
+
+Satellite Image Contrast Enhancement Using Discrete Wavelet Transform and Singular Value Decomposition
+https://ieeexplore-ieee-org.cyber.usask.ca/stamp/stamp.jsp?tp=&arnumber=5338028
+
+I haven't looked at the math closely, but I am very familiar with both SVD and Wavelet transforms, and have working python code for both that I can share with the group.
+
+2. Image interpolation
+
+Interpolated between pixels to provide the extra resolution.
+Very easy to do with scipy (https://scipy-lectures.org/advanced/image_processing/).
+
+3. Machine Learning
+
+I don't know much about this but it gives nice results. 
+https://arxiv.org/abs/1612.07919
+
+4. https://arxiv.org/ftp/arxiv/papers/1003/1003.4053.pdf
+A comparison of various image enhancement algorithms. The best one would depend on what our end goal is. 
