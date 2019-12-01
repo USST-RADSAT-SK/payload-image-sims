@@ -17,3 +17,24 @@ Conclusions
 I think that this could be a good option for our team. Although some of the math may be a little intense, we could likely use many built in functions in matlab or python to assist with this. We should consider this option. Click on the link at the bottom of the page to see an example of how four images can be used to improve resolution. 
 
 http://www.infognition.com/articles/what_is_super_resolution.html
+
+
+
+
+Single Image Super-Resolution Using Deep Learning
+
+-Uses only a single image and Matlab deep learning  & image processing toolbox functions
+-Trains 'Very Deep Super Resolution' neural network using large set of given images at high and low resolution (image set is provided in link below).
+-Neural network then learns to estimate the differences between high and low resolution images from a single low-res image and creates a high resolution image
+
+Steps
+1) Take single image
+2) Use method & image set given in linked Mathworks source below to train network. Network is essentially a series of many cascaded convolutional filters that finds the details lost between high and low resolution images and learns to estimate what detail has been lost, which can then be added back to a low resolution image. Source provides extensive documentation on implementation, and Matlab deep learning toolbox gives many helper functions. 
+3) Upscale low res image using bicubic interpolation (built in to imresize function in Matlab) or any other method so that low-res image is desired size
+4) Pass upscaled low res image into network, which returns high resolution image
+
+
+Conclusion
+Fairly complicated method, but results look good and the link below has very in depth instructions with code and explanations that completely lays out how to utilize this method. Mathworks also has in depth documentation on all the functions in the deep learning toolbox. Not sure how the results would compare to other methods that use multiple images. Could be worth using if we run into any difficulty capturing multiple similar images. 
+
+https://www.mathworks.com/help/images/single-image-super-resolution-using-deep-learning.html
