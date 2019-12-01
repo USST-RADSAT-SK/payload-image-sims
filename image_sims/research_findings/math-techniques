@@ -1,0 +1,35 @@
+1. SVD + Wavelet transform
+
+In PHYS 893 we used singular value decomposition to change the resolution of an image.
+
+Singular value decomposition is used to break a matrix (=image) up into its "principal components". These are essentially the vectors that contain the information needed to reconstruct the matrix.
+Often only the first few components contain the majority of the important information, so the image resolution can be decreased by discarding the less important components. 
+
+It looks like a combination of SVD and Wavelet transforms can be used to increase the constrast of an image (so not exactly the resolution...)
+A wavelet transform is basically a 2d fourier transform. It shows how the fundamental frequencies of the signal vary over time.
+
+Satellite Image Contrast Enhancement Using Discrete Wavelet Transform and Singular Value Decomposition
+https://ieeexplore-ieee-org.cyber.usask.ca/stamp/stamp.jsp?tp=&arnumber=5338028
+
+I haven't looked at the math closely, but I am very familiar with both SVD and Wavelet transforms, and have working python code for both that I can share with the group.
+
+2. Image interpolation
+
+Interpolated between pixels to provide the extra resolution.
+Very easy to do with scipy (https://scipy-lectures.org/advanced/image_processing/).
+
+3. Using wavelets for image interpolation
+
+https://ieeexplore-ieee-org.cyber.usask.ca/stamp/stamp.jsp?tp=&arnumber=5702359
+
+For image enhancement purposes it looks like the wavelet transform is used to break the signal (the image) into four different "frequency" bands.
+The the highest frequency image is used to interpolate the input low resolution image.
+This new image is then combined back with the other frequency components to get the final result.
+
+4. Machine Learning
+
+I don't know much about this but it gives nice results. 
+https://arxiv.org/abs/1612.07919
+
+5. https://arxiv.org/ftp/arxiv/papers/1003/1003.4053.pdf
+A comparison of various image enhancement algorithms. The best one would depend on what our end goal is. 
