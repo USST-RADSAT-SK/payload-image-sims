@@ -1,0 +1,11 @@
+https://www.mathworks.com/matlabcentral/fileexchange/30488-superresolution-demo
+
+-also has a video showing a demo of the code (has a graphical user interface)
+-sad acoustic music 
+-video seems to work
+
+-matlab code provided as well
+-15 functions
+-this includes the option for colour which we won't need
+
+-haven't tested the code yet, will do that at the computer lab sometime soon
