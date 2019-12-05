@@ -1,0 +1,5 @@
+Here's the site tutorial I used to try to emulate superresolution with photoshop, if anyone wants to look
+
+https://www.dpreview.com/articles/0727694641/here-s-how-to-pixel-shift-with-any-camera
+
+I've only tried it once, and it didn't work super great but I'll leave the source nonetheless.
