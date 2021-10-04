@@ -1,7 +1,0 @@
-The superresolution matlab script will take multiple input images (for now, it is 10 test images, it will eventually be the 4 images taken by the camera). The image processing is then handled by several premade superresolution functions I found online, which I then had to modify to suit our needs (e.g. black and white only, replacing a GUI with code, making the code more auotmated than user-oriented). 
-
-The output is two images. One image has undergone superresolution from the input images, and the second image takes the output and enhances contrast using histogram equalization. The goal is that the two different contrasts in the two output images will highlight different parts of the images, increasing the likelihood that interesting details will be captured.
-
-Presently, there is also fisheye to rectilinear matlab code made, but Chris still requires a calibration photo to ensure it works before implementing it with the superresolution code. The sample matlab code for this is in this folder, named test.m
-
-Once the calibration photo is received, it should be a simple matter of adding the fisheye code to the end of the superresolution code and making the output of the superres code the input of the fisheye code.
