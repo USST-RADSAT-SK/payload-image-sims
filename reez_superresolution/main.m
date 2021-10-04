@@ -28,7 +28,6 @@ imwrite(image, 'outputimage/superres.jpg');
 
 I = imread('outputimage/superres.jpg');
 
-
 J = histeq(I);
 
 figure(12)
